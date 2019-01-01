@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="beneficiaireDao" class="com.paiement.mvc.dao.impl.BeneficiaireDaoImpl"></bean>
+	<bean id="beneficiaireService" class="com.paiement.mvc.services.impl.BeneficiaireServiceImpl">
+	<property name="dao" ref="beneficiaireDao"></property>
+	</bean>
+	
+	<bean id="budgetDao" class="com.paiement.mvc.dao.impl.BudgetDaoImpl"></bean>
+	<bean id="budgetService" class="com.paiement.mvc.services.impl.BudgetServiceImpl">
+	<property name="dao" ref="budgetDao"></property>
+	</bean>
+	
+	<bean id="chequeDao" class="com.paiement.mvc.dao.impl.ChequeDaoImpl"></bean>
+	<bean id="chequeService" class="com.paiement.mvc.services.impl.ChequeServiceImpl">
+	<property name="dao" ref="chequeDao"></property>
+	</bean>
+	
+	<bean id="rubriqueDao" class="com.paiement.mvc.dao.impl.RubriqueDaoImpl"></bean>
+	<bean id="rubriqueService" class="com.paiement.mvc.services.impl.RubriqueServiceImpl">
+	<property name="dao" ref="rubriqueDao"></property>
+	</bean>
+	
+	<bean id="compteDao" class="com.paiement.mvc.dao.impl.CompteDaoImpl"></bean>
+	<bean id="compteService" class="com.paiement.mvc.services.impl.CompteServiceImpl">
+	<property name="dao" ref="compteDao"></property>
+	</bean>
+	
+	<bean id="etablissementDao" class="com.paiement.mvc.dao.impl.EtablissementDaoImpl"></bean>
+	<bean id="etablissementService" class="com.paiement.mvc.services.impl.EtablissementServiceImpl">
+	<property name="dao" ref="etablissementDao"></property>
+	</bean>
+	
+	<bean id="exerciceDao" class="com.paiement.mvc.dao.impl.ExerciceDaoImpl"></bean>
+	<bean id="exerciceService" class="com.paiement.mvc.services.impl.ExerciceServiceImpl">
+	<property name="dao" ref="exerciceDao"></property>
+	</bean>
+	
+	<bean id="ordrePaiementDao" class="com.paiement.mvc.dao.impl.OrdrePaiementDaoImpl"></bean>
+	<bean id="ordrePaiementService" class="com.paiement.mvc.services.impl.OrdrePaiementServiceImpl">
+	<property name="dao" ref="ordrePaiementDao"></property>
+	</bean>
+	
+	<bean id="ordreVirementDao" class="com.paiement.mvc.dao.impl.OrdreVirementDaoImpl"></bean>
+	<bean id="ordreVirementService" class="com.paiement.mvc.services.impl.OrdreVirementServiceImpl">
+	<property name="dao" ref="ordreVirementDao"></property>
+	</bean>
+	
+	<bean id="personneDao" class="com.paiement.mvc.dao.impl.PersonneDaoImpl"></bean>
+	<bean id="personneService" class="com.paiement.mvc.services.impl.PersonneServiceImpl">
+	<property name="dao" ref="personneDao"></property>
+	</bean>
+	
+	
+</beans>
